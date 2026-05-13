@@ -114,7 +114,7 @@ void InputHandler(void) {
     bool _e = (digitalRead(ESC_BTN) == LOW);
     bool _s = (digitalRead(SEL_BTN) == LOW);
 
-    if (_s || _u || _d || _r || _l || !_e) {
+    if (_s || _u || _d || _r || _l || _e) {
         tm = millis();
         if (!wakeUpScreen()) AnyKeyPress = true;
         else return;
