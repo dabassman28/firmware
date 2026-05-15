@@ -102,7 +102,7 @@ void _setBrightness(uint8_t brightval) {
 **********************************************************************/
 void InputHandler(void) {
     static unsigned long tm = 0;
-    if (millis() - tm < 100 && !LongPress)
+    if (millis() - tm < 150 && !LongPress)
         ///////edit here for button issue????????/////////
         return;
 
