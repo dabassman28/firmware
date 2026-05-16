@@ -102,8 +102,8 @@ void _setBrightness(uint8_t brightval) {
 **********************************************************************/
 void InputHandler(void) {
     static unsigned long tm = 0;
-    if (millis() - tm < 150 && !LongPress)
-        ///////edit here for button issue????????/////////
+    if (millis() - tm < 125 && !LongPress)
+        ///////edit here for button issue????????/////////   trying 125, 150 ok///
         return;
 
     // DIY Buttons: Pressed = LOW (Connected to Ground)
